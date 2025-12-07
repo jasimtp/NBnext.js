@@ -1,0 +1,143 @@
+/* ================================
+   CONTACT PAGE WRAPPER
+===================================*/
+.contact-wrapper {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   CONTAINER (LEFT + RIGHT)
+===================================*/
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* ================================
+   LEFT INFO BOX
+===================================*/
+.contact-info-box {
+    width: 30%;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+.contact-info-box h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.info-item {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+/* ================================
+   CONTACT FORM
+===================================*/
+.contact-form {
+    width: 50%;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    background: #fafafa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ffbf00;
+    background: #fff;
+}
+
+/* SEND BUTTON */
+.send-btn {
+    padding: 12px;
+    background: #ffb700;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background: #ffa200;
+}
+
+/* ====================================
+   RESPONSIVE (TABLET)
+===================================*/
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info-box,
+    .contact-form {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+}
+
+/* ====================================
+   MOBILE RESPONSIVE
+===================================*/
+@media (max-width: 600px) {
+    .contact-wrapper {
+        padding: 20px 10px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-info-box,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .send-btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

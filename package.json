@@ -1,0 +1,24 @@
+{
+  "name": "next_assignment",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.0",
+    "bootstrap": "^5.3.8",
+    "next": "^16.0.7",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "baseline-browser-mapping": "^2.8.32",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  }
+}
